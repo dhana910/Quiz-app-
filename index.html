@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- START SCREEN -->
+    <div id="start-screen" class="center">
+        <h1>Quiz App</h1>
+        <h3>Select Category</h3>
+        <button class="category" data-cat="gk">General Knowledge</button>
+        <button class="category" data-cat="history">History & Government</button>
+        <button class="category" data-cat="policies">Govt Policies</button>
+    </div>
+
+    <!-- QUIZ SCREEN -->
+    <div id="quiz-screen" style="display:none;">
+        <div class="top-bar">
+            <div id="progress">
+                <div id="progress-bar"></div>
+            </div>
+            <div id="timer">10</div>
+        </div>
+
+        <div id="question-box"></div>
+
+        <div id="answers">
+            <!-- Buttons auto-filled by JS -->
+        </div>
+
+        <button id="next-btn" style="display:none;">Next</button>
+    </div>
+
+    <!-- RESULT SCREEN -->
+    <div id="result-screen" class="center" style="display:none;">
+        <h1>Quiz Completed!</h1>
+        <p id="score-text"></p>
+        <button id="restart-btn">Restart</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
